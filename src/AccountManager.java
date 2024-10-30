@@ -17,7 +17,7 @@ public class AccountManager {
     }
 
     private void loadBeneficiaries() {
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\marin\\OneDrive\\Υπολογιστής\\trial project\\java project\\data\\beneficiaries.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("java project\\data\\beneficiaries.csv"))) {
             String line;
             br.readLine(); // Ignore header
             while ((line = br.readLine()) != null) {
@@ -31,7 +31,7 @@ public class AccountManager {
     }
 
     private void loadAccounts() {
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\marin\\OneDrive\\Υπολογιστής\\trial project\\java project\\data\\accounts.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("java project\\data\\accounts.csv"))) {
             String line;
             br.readLine(); // Ignore header
             while ((line = br.readLine()) != null) {
@@ -45,7 +45,7 @@ public class AccountManager {
     }
 
     private void loadTransactions() {
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\marin\\OneDrive\\Υπολογιστής\\trial project\\java project\\data\\transactions.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("java project\\data\\transactions.csv"))) {
             String line;
             br.readLine(); // Ignore header
             while ((line = br.readLine()) != null) {
